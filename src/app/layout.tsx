@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { PwaRegister } from "@/components/PwaRegister";
+import { PwaInstallModal } from "@/components/PwaInstallModal";
 
 export const metadata: Metadata = {
   title: "SincroCare",
@@ -34,6 +35,7 @@ export default function RootLayout({
       </head>
       <body className="h-full overflow-hidden" style={{ background: "var(--bg)" }}>
         <PwaRegister />
+        <PwaInstallModal />
         {children}
       </body>
     </html>
