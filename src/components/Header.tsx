@@ -41,18 +41,28 @@ export function Header() {
       </div>
 
       {/* Logo */}
-      <span
-        style={{
-          fontFamily: "'Playfair Display', serif",
-          fontWeight: 400,
-          fontSize: 24,
-          color: "#2F2F2F",
-          letterSpacing: "-0.5px",
-          userSelect: "none",
-        }}
-      >
-        SincroCare
-      </span>
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <Image
+          src="/logo.png"
+          alt="SincroCare"
+          width={36}
+          height={36}
+          style={{ objectFit: "contain" }}
+          priority
+        />
+        <span
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontWeight: 400,
+            fontSize: 22,
+            color: "#2F2F2F",
+            letterSpacing: "-0.5px",
+            userSelect: "none",
+          }}
+        >
+          SincroCare
+        </span>
+      </div>
 
       {/* Bell */}
       <button
